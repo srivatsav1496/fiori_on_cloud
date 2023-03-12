@@ -4,7 +4,8 @@
   "description": "anubhavtrainings.com",
   "main": "index.js",
   "scripts": {
-    "start": "node .",
+    "start": "fiori run --open index.html",
+    "start-dist": "fiori run --open index.html --config ui5-dist.yaml",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "anubhav",
@@ -14,6 +15,13 @@
     "@sap/html5-repo-mock": "^1.5.3"
   },
   "devDependencies": {
+    "@sap/ux-specification": "^1.108.0",
+    "@sap/ux-ui5-tooling": "^1.9.1",
     "@ui5/cli": "^3.0.4"
+  },
+  "ui5":{
+    "dependencies": [ 
+      "@sap/ux-ui5-tooling"
+  ]
   }
 }
