@@ -2,3 +2,7 @@ specVersion: '2.2'
 metadata:
   name: sgtpfioriapp
 type: application
+resources: 
+  configuration:
+    paths:
+      webapp: dist
